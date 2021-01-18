@@ -23,7 +23,7 @@ from raw_pillow_opener import register_raw_opener
 register_raw_opener()
 
 image = Image.open('TEST.NEF', formats=['RAW'])
-image.load()
+image.save('output.jpg')
 ```
 
 ---
